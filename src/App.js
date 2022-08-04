@@ -1,14 +1,14 @@
 import './App.css';
+import Header from './Header';
+import Content from './Content';
 
 function App() {
   return (
-    <div className="container">
-      <div className="logo">Logo</div>
-      <div className="header">Header</div>
-      <div className="nav">Nav</div>
-      <div className="content">Content</div>
-      <div className="footer">Footer</div>
 
+    
+    <div className="container">
+      <div className="header"> <Header /></div>
+      <div className="content"><Content /></div>
     </div>
   );
 }
