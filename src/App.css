@@ -6,6 +6,7 @@
   display: grid;
   grid-template-rows: 1fr 10fr;
   overflow-y: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header {
@@ -25,9 +26,6 @@
   align-items: center;
   align-content: center;
   margin-left: auto; 
-  margin-right: auto;
-  font-size: x-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #F6F6F6;
 }
 
@@ -37,7 +35,6 @@
   background-color: #212121;
   border: none;
   font-size: medium;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #F6F6F6;
   text-decoration: none;
   text-align: center; 
@@ -49,9 +46,53 @@
   background-color: #212121;
   border: none;
   font-size: large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #FFF;
   text-decoration: none;
   text-align: center;
 }
 
+.contentContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contentContainer .subcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+}
+
+.subcontainer.about {
+  background-color: burlywood;
+  gap: 10rem;
+}
+
+.subcontainer.experience {
+  background-color: rgb(158, 131, 95);
+}
+
+.subcontainer.projects {
+  background-color: rgb(53, 44, 31);
+}
+
+.pfp {
+  border-radius: 150px;
+}
+
+.aboutSection {
+  text-align: left;
+  font-size: large;
+  max-width: 30rem;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  margin-left: 3rem;
+}

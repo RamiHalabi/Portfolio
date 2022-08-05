@@ -1,11 +1,15 @@
 import React from "react";
-
+import About from "./About";
 
 const Content = () => {
 
     return(
         <>
-        <h1>Content</h1>
+        <div className="contentContainer">
+            <div className="subcontainer about"><About /></div>
+            <div className="subcontainer experience">EXPERIENCE: Skills / Education / internship</div>
+            <div className="subcontainer projects">PROJECTS</div>
+        </div>
         </>
     );
 };
