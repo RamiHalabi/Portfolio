@@ -3,15 +3,32 @@
   background-color: #212121;
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-  overflow-y: auto;
+  overflow-y: visible;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  scrollbar-color: #212121;
+}
+
+*::-webkit-scrollbar {
+  background-color: #212121;
+  color: #F6F6F6;
+}
+
+*::-webkit-scrollbar-track {
+  background: #212121;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #464646;    
+  border-radius: 10px;       
+  border: 4px solid #212121;  
 }
 
 .header {
   background-color: #212121;
   display:flex;
+  height: 7vh;
+  position: fixed;
+  width: 100%;
 }
 
 .content {
@@ -19,6 +36,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .header  .navbar {
@@ -52,10 +70,8 @@
 }
 
 .contentContainer {
-  display: grid;
   width: 100%;
   height: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .contentContainer .subcontainer{
@@ -66,26 +82,40 @@
 }
 
 .subcontainer.about {
-  background-color: burlywood;
+  background-image: url("./AboutBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   gap: 10rem;
+  height: 100vh;
 }
 
 .subcontainer.experience {
-  background-color: rgb(158, 131, 95);
+  background-color: #6d0003;
+  height: 100vh;
 }
 
 .subcontainer.projects {
-  background-color: rgb(53, 44, 31);
+  background-color: #6d0003;
+  height: 100vh;
 }
 
 .pfp {
   border-radius: 150px;
+  margin-bottom: 7rem;
 }
 
 .aboutSection {
   text-align: left;
   font-size: large;
-  max-width: 30rem;
+  max-width: 50rem;
+  margin-bottom: 7rem;
+}
+
+.aboutSection .styling {
+  margin-top: 1.25rem;
+  letter-spacing: 0.5px;
 }
 
 .name {
