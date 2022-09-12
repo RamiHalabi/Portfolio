@@ -22,10 +22,6 @@ const About = () =>{
                 <div className="styling">
                 I am more than happy to share more information or meet with you! 
                 </div>
-                
-                <div className="styling">
-                EmailButton LinkedInButton
-                </div>
             </div>
     
             <img 

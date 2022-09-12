@@ -5,7 +5,6 @@
   width: 100%;
   overflow-y: visible;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  scrollbar-color: #212121;
 }
 
 *::-webkit-scrollbar {
@@ -29,6 +28,7 @@ body::-webkit-scrollbar-thumb {
   height: 7vh;
   position: fixed;
   width: 100%;
+  z-index: 99 !important;
 }
 
 .content {
@@ -96,11 +96,6 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
 }
 
-.subcontainer.projects {
-  background-color: #6d0003;
-  height: 100vh;
-}
-
 .pfp {
   border-radius: 150px;
   margin-bottom: 7rem;
@@ -111,18 +106,19 @@ body::-webkit-scrollbar-thumb {
   font-size: large;
   max-width: 50rem;
   margin-bottom: 7rem;
+  margin-left: 1.25rem;
 }
 
 .aboutSection .styling {
   margin-top: 1.25rem;
   letter-spacing: 0.5px;
-  animation-delay: 1s;
-  animation: fadeIn 1s 0.5s forwards;
+  animation-delay: 2s;
+  animation: fadeIn 1s 1.25s forwards;
   opacity: 0;
 }
 
 .aboutHeader {
-  animation: fadeIn 0.5s 0.15s forwards;
+  animation: fadeIn 0.5s 0.5s forwards;
   opacity: 0;
 }
 
@@ -133,6 +129,46 @@ body::-webkit-scrollbar-thumb {
   color: white;
   font-size: x-large;
   margin-left: 3rem;
+}
+
+.exp {
+  display: grid;
+  grid-template-rows: 2fr 5fr;
+  width: 100%;
+  height: 100%;
+}
+
+.skillTitle {
+  text-align: center;
+  font-size: larger;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+
+.skillsList {
+display: flex;
+align-items: center;
+align-content: center;
+font-size: large;
+}
+
+.skill {
+  width: 137px;
+  height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -3rem;
+  text-align: center;
+}
+
+.point {
+  margin-top: -3rem;
+}
+
+.skill:hover {
+  font-size: larger;
 }
 
 @keyframes fadeIn {
