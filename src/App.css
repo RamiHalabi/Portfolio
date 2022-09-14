@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .subcontainer.experience {
-  background-color: #6d0003;
+  background-color: #212121;
   height: 100vh;
 }
 
@@ -120,6 +120,7 @@ body::-webkit-scrollbar-thumb {
 .aboutHeader {
   animation: fadeIn 0.5s 0.5s forwards;
   opacity: 0;
+
 }
 
 .name {
