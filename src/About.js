@@ -21,15 +21,14 @@ const About = () =>{
 
                 <div className="styling">
                 I am more than happy to share more information or meet with you! 
-                </div>
+                </div> 
             </div>
-    
+                
             <img 
             alt="pfp" 
-            title="ppfp" 
+            title="Profile Pic" 
             src={pfp}
             className="pfp" />
-  
         </>
     )
 
