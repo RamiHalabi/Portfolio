@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from './Skills'
+import Skills from './Skills';
 
 const Experience = () =>{
 
@@ -7,12 +7,13 @@ const Experience = () =>{
         skills: {
             display: "grid",
             alignItems: "center",
-            justifyContent: "center",   
-        },
+            justifyContent: "center",
+            },
         projects: {
             display: "grid",
             alignItems: "center",
             justifyContent: "center", 
+            marginBottom: "2rem",
         }, 
     };
 
@@ -39,18 +40,19 @@ const Experience = () =>{
 
 <div className="exp">
 
-    <div style={styles.skills} className="reveal">
+    <div style={styles.skills} className="reveal" id="skillsAnimated">
+        
         <Skills />
     </div>
 
-    <div style={styles.projects}>
+    <div style={styles.projects} >
 
-        <div className="reveal skillTitle">PROGRAMMING EXPERIENCE</div>
+        <div className="reveal skillTitle" style={{marginTop: "-1rem"}}>PROGRAMMING EXPERIENCE</div>
     
             <div className="reveal">
-                <div>Software Development Intern</div>
-                <div>Keyhole Software - Lenexa, KS | June 2022–August 2022</div>
-                <div>Technologies: JavaScript | React | CSS | GitBash | Azure DevOps | Node.js</div>
+                <div className="skillLabel">SOFTWARE DEVELOPMENT INTERN</div>
+                <div className="skillInfo1">Keyhole Software - Lenexa, KS | June 2022–August 2022</div>
+                <div className="skillInfo2">Technologies: JavaScript | React | CSS | GitHub | Azure DevOps | Node.js</div>
                 <div>● Leveraged JavaScript, React, CSS, and Node.js to develop user-requested features and improvements for 2-D design canvas MockOla in an agile environment.</div>
                 <div>● Implemented a modal Help feature UI with React and CSS. Utilized various functional components such as TreeMenu, Dialog, Cards, and Buttons to curate a smooth user experience.</div>
                 <div>● Renovated three legacy Color Pickers that allowed users to use color swatches and provide a modern look.</div>
@@ -60,20 +62,20 @@ const Experience = () =>{
             </div>
 
             <div className="reveal">
-                <div>Minecraft Plugins</div>
-                <div> Independent Project - Columbia, MO | December 2021–January 2022</div>
-                <div>Technologies: Java (Maven Project) | GitBash</div>
+                <div className="skillLabel">MINECRAFT PLUGINS</div>
+                <div className="skillInfo1"> Independent Project - Columbia, MO | December 2021–January 2022</div>
+                <div className="skillInfo2">Technologies: Java (Maven Project) | GitHub</div>
                 <div>● Developed several public plugins on a personal Minecraft server to enhance gameplay for players.</div>
                 <div>● Created a Java data manager that writes to a YAML file to save individual user data.</div>
                 <div>● Utilized HashMap data structure to save and load user data efficiently.</div>
-                <div>● See plugins on GitHub: https://github.com/RamiHalabi/Minecraft-Plugins</div>
+                <div>● See plugins on GitHub!</div>
             </div>
             <div>
 
             <div className="reveal">
-                <div>Discord Bot</div>
-                <div>Independent Project - Columbia, MO | January 2022–February 2022</div>
-                <div>Technologies: JavaScript | Node.js | Discord</div>
+                <div className="skillLabel">DISCORD BOT</div>
+                <div className="skillInfo1">Independent Project - Columbia, MO | January 2022–February 2022</div>
+                <div className="skillInfo2">Technologies: JavaScript | Node.js | Discord</div>
                 <div>● Designed and developed a Discord bot that can be used as a music player with queue, skip, next, and back commands.</div>
                 <div>● Implemented using stacks data structure for a dynamically sized playlist.</div>
                 <div>● Used Node.js to access and make calls to Discord.js and YouTube Data API v3.</div>

@@ -1,4 +1,6 @@
-
+* {
+  cursor: default;
+}
 .container {
   background-color: #212121;
   height: 100vh;
@@ -23,9 +25,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header {
-  background-color: #212121;
+  background-color: black;
   display:flex;
-  height: 7vh;
+  height: 5vh;
   position: fixed;
   width: 100%;
   z-index: 99 !important;
@@ -50,18 +52,20 @@ body::-webkit-scrollbar-thumb {
 .a {
   width: 73.11px;
   margin: 0rem 3rem 0rem 3rem;
-  background-color: #212121;
+  background-color: black;
   border: none;
   font-size: medium;
   color: #F6F6F6;
   text-decoration: none;
   text-align: center; 
+  transition: font-size 250ms;
+  cursor: pointer;
 }
 
 .a:hover {
   width: 73.11px;
   margin: 0rem 3rem 0rem 3rem;
-  background-color: #212121;
+  background-color: black;
   border: none;
   font-size: large;
   color: #FFF;
@@ -92,7 +96,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .subcontainer.experience {
-  background-color: #212121;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   height: 100vh;
 }
 
@@ -141,11 +145,31 @@ body::-webkit-scrollbar-thumb {
 
 .skillTitle {
   text-align: center;
-  font-size: larger;
-  word-spacing: 15px;
-  letter-spacing: 2px;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1REM;
   font-size: xx-large;
-  margin-top: 1rem;
+}
+
+.skillLabel {
+
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  font-size: x-large;
+  margin-bottom: 0.1rem;
+
+}
+
+.skillInfo1 {
+  font-size: large;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.05rem;
+}
+
+.skillInfo2 {
+  font-size: large;
+  word-spacing: 0.025rem;
+  letter-spacing: 0.025rem;
 }
 
 .skillsList {
@@ -162,10 +186,13 @@ font-size: large;
   margin-right: 1px;
   margin-top: -3rem;
   text-align: center;
+  transition: font-size 250ms;
+  
 }
 
 .point {
   margin-top: -3rem;
+  
 }
 
 .skill:hover {
