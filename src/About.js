@@ -6,6 +6,15 @@ const About = () =>{
 
     return(
         <>
+        
+        <div className="img">
+                <img 
+                alt="pfp" 
+                title="Profile Pic" 
+                src={pfp}
+                className="pfp" />
+            </div> 
+            
             <div className="aboutSection">
                 <h2 className="aboutHeader">Hello and Welcome!</h2>
 
@@ -23,12 +32,8 @@ const About = () =>{
                 I am more than happy to share more information or meet with you! 
                 </div> 
             </div>
-                
-            <img 
-            alt="pfp" 
-            title="Profile Pic" 
-            src={pfp}
-            className="pfp" />
+ 
+
         </>
     )
 

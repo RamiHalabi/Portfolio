@@ -3,20 +3,6 @@ import Skills from './Skills';
 
 const Experience = () =>{
 
-    const styles = {
-        skills: {
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center",
-            },
-        projects: {
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center", 
-            marginBottom: "2rem",
-        }, 
-    };
-
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
       
@@ -40,16 +26,16 @@ const Experience = () =>{
 
 <div className="exp">
 
-    <div style={styles.skills} className="reveal" id="skillsAnimated">
+    <div className=" skills reveal" id="skillsAnimated">
         
         <Skills />
     </div>
 
-    <div style={styles.projects} >
+    <div className="projects">
 
-        <div className="reveal skillTitle" style={{marginTop: "-1rem"}}>PROGRAMMING EXPERIENCE</div>
+        <div className="reveal skillTitle">PROGRAMMING EXPERIENCE</div>
     
-            <div className="reveal">
+            <div className="project reveal">
                 <div className="skillLabel">SOFTWARE DEVELOPMENT INTERN</div>
                 <div className="skillInfo1">Keyhole Software - Lenexa, KS | June 2022–August 2022</div>
                 <div className="skillInfo2">Technologies: JavaScript | React | CSS | GitHub | Azure DevOps | Node.js</div>
@@ -61,7 +47,7 @@ const Experience = () =>{
                 <div>● Created and reviewed pull requests on Azure DevOps as well as updated tickets and status.</div>
             </div>
 
-            <div className="reveal">
+            <div className="project reveal">
                 <div className="skillLabel">MINECRAFT PLUGINS</div>
                 <div className="skillInfo1"> Independent Project - Columbia, MO | December 2021–January 2022</div>
                 <div className="skillInfo2">Technologies: Java (Maven Project) | GitHub</div>
@@ -72,7 +58,7 @@ const Experience = () =>{
             </div>
             <div>
 
-            <div className="reveal">
+            <div className="project reveal" style={{marginBottom: "5%"}}>
                 <div className="skillLabel">DISCORD BOT</div>
                 <div className="skillInfo1">Independent Project - Columbia, MO | January 2022–February 2022</div>
                 <div className="skillInfo2">Technologies: JavaScript | Node.js | Discord</div>

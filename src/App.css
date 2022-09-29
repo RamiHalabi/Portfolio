@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   background-color: black;
   display:flex;
-  height: 5vh;
+  height: 3.5rem;
   position: fixed;
   width: 100%;
   z-index: 99 !important;
@@ -47,12 +47,13 @@ body::-webkit-scrollbar-thumb {
   align-content: center;
   margin-left: auto; 
   color: #F6F6F6;
+  flex-wrap: nowrap;
 }
 
 .a {
   width: 73.11px;
   margin: 0rem 3rem 0rem 3rem;
-  background-color: black;
+  background-color: transparent;
   border: none;
   font-size: medium;
   color: #F6F6F6;
@@ -65,7 +66,7 @@ body::-webkit-scrollbar-thumb {
 .a:hover {
   width: 73.11px;
   margin: 0rem 3rem 0rem 3rem;
-  background-color: black;
+  background-color: transparent;
   border: none;
   font-size: large;
   color: #FFF;
@@ -82,6 +83,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center; 
+  align-content: center;
   color: white;
 }
 
@@ -91,26 +93,28 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  gap: 10rem;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .subcontainer.experience {
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .pfp {
   border-radius: 150px;
-  margin-bottom: 7rem;
+  margin: 2rem;
 }
 
 .aboutSection {
-  text-align: left;
   font-size: large;
   max-width: 50rem;
-  margin-bottom: 7rem;
-  margin-left: 1.25rem;
+  margin-bottom: 4.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .aboutSection .styling {
@@ -133,7 +137,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   color: white;
   font-size: x-large;
-  margin-left: 3rem;
+  margin-left: 1%;
 }
 
 .exp {
@@ -174,9 +178,11 @@ body::-webkit-scrollbar-thumb {
 
 .skillsList {
 display: flex;
-align-items: center;
-align-content: center;
-font-size: large;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+height: 7rem;
+
 }
 
 .skill {
@@ -184,19 +190,39 @@ font-size: large;
   height: 25px;
   margin-left: 1px;
   margin-right: 1px;
-  margin-top: -3rem;
   text-align: center;
+  font-size: large;
   transition: font-size 250ms;
   
 }
 
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    row-gap: 2rem;
+}
+
 .point {
-  margin-top: -3rem;
-  
 }
 
 .skill:hover {
   font-size: larger;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+}
+
+.project {
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
 @keyframes fadeIn {
@@ -221,7 +247,7 @@ font-size: large;
 
 .reveal{
   position: relative;
-  transform: translateY(20px);
+  transform: translateY(-20px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -238,6 +264,14 @@ font-size: large;
   letter-spacing: 2px;
   font-size: xx-large;
   margin-top: 1rem;
+}
+
+.styledChevron {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: -4rem;
 }
 
 .chevron {
@@ -299,3 +333,84 @@ font-size: large;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+ .subcontainer.about {
+  height: 100%;
+}
+
+.pfp {
+  margin: 4rem 2rem 0rem 2rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.skillTitle {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  .a {
+    margin: 0rem 3% 0rem 3%;
+   }
+   
+   .a:hover {
+    margin: 0rem 3% 0rem 3%;
+   }
+
+}
+
+@media only screen and (max-height: 600px) {
+
+  .subcontainer.about {
+   height: 100%;
+ }
+ 
+ .pfp {
+   border-radius: 150px;
+   margin: 4rem 2rem 0rem 2rem;
+ }
+ 
+ .skills {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 2rem;
+ }
+ 
+ .skillTitle {
+   margin-left: 3%;
+   margin-right: 3%;
+ }
+ 
+ .a {
+  margin: 0rem 3% 0rem 3%;
+ }
+ 
+ .a:hover {
+  margin: 0rem 3% 0rem 3%;
+ }
+
+ .navbar {
+  margin-left: inherit;
+}
+ 
+ }
+
+
+
+
+
+
+
