@@ -1,5 +1,6 @@
 * {
   cursor: default;
+  scroll-behavior: smooth;
 }
 .container {
   background-color: #212121;
