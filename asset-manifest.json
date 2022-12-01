@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ab0fe2b6.css",
+    "main.js": "/Portfolio/static/js/main.e3b04d13.js",
+    "static/js/787.994511a4.chunk.js": "/Portfolio/static/js/787.994511a4.chunk.js",
+    "static/media/AboutBackground.jpg": "/Portfolio/static/media/AboutBackground.eb018087060622dadc93.jpg",
+    "static/media/Rami Halabi, Resume.pdf": "/Portfolio/static/media/Rami Halabi, Resume.bb7ddd50bf43e83930d5.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.ab0fe2b6.css.map": "/Portfolio/static/css/main.ab0fe2b6.css.map",
+    "main.e3b04d13.js.map": "/Portfolio/static/js/main.e3b04d13.js.map",
+    "787.994511a4.chunk.js.map": "/Portfolio/static/js/787.994511a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab0fe2b6.css",
+    "static/js/main.e3b04d13.js"
+  ]
+}
