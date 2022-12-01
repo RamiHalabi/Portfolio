@@ -7,27 +7,27 @@
   height: 100vh;
   width: 100%;
   overflow-y: visible;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 *::-webkit-scrollbar {
   background-color: #212121;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 *::-webkit-scrollbar-track {
-  background: #212121;       
+  background: #212121;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #464646;    
-  border-radius: 10px;       
-  border: 4px solid #212121;  
+  background-color: #464646;
+  border-radius: 10px;
+  border: 4px solid #212121;
 }
 
 .header {
   background-color: black;
-  display:flex;
+  display: flex;
   height: 3.5rem;
   position: fixed;
   width: 100%;
@@ -35,19 +35,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content {
-  background-color: #F6F6F6;
-  display:flex;
+  background-color: #f6f6f6;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.header  .navbar {
+.header .navbar {
   display: flex;
   align-items: center;
   align-content: center;
-  margin-left: auto; 
-  color: #F6F6F6;
+  margin-left: auto;
+  color: #f6f6f6;
   flex-wrap: nowrap;
 }
 
@@ -57,9 +56,9 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   border: none;
   font-size: medium;
-  color: #F6F6F6;
+  color: #f6f6f6;
   text-decoration: none;
-  text-align: center; 
+  text-align: center;
   transition: font-size 250ms;
   cursor: pointer;
 }
@@ -70,7 +69,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   border: none;
   font-size: large;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   text-align: center;
 }
@@ -80,10 +79,10 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 
-.contentContainer .subcontainer{
+.contentContainer .subcontainer {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
   color: white;
 }
@@ -99,11 +98,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .subcontainer.experience {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .pfp {
   border-radius: 150px;
@@ -129,7 +127,6 @@ body::-webkit-scrollbar-thumb {
 .aboutHeader {
   animation: fadeIn 0.5s 0.5s forwards;
   opacity: 0;
-
 }
 
 .name {
@@ -151,17 +148,15 @@ body::-webkit-scrollbar-thumb {
 .skillTitle {
   text-align: center;
   word-spacing: 0.5rem;
-  letter-spacing: 0.1REM;
+  letter-spacing: 0.1rem;
   font-size: xx-large;
 }
 
 .skillLabel {
-
   word-spacing: 0.5rem;
   letter-spacing: 0.1rem;
   font-size: x-large;
   margin-bottom: 0.1rem;
-
 }
 
 .skillInfo1 {
@@ -178,12 +173,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skillsList {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-height: 7rem;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 7rem;
 }
 
 .skill {
@@ -194,20 +188,17 @@ height: 7rem;
   text-align: center;
   font-size: large;
   transition: font-size 250ms;
-  
 }
 
-.skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
-    row-gap: 2rem;
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  row-gap: 2rem;
 }
-
-
 
 .skill:hover {
   font-size: larger;
@@ -217,7 +208,6 @@ height: 7rem;
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-
 }
 
 .project {
@@ -226,33 +216,43 @@ height: 7rem;
 }
 
 @keyframes fadeIn {
-  to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  to {opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(-20px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
@@ -296,7 +296,7 @@ height: 7rem;
 
 .chevron:before,
 .chevron:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 0;
   height: 100%;
@@ -318,7 +318,6 @@ height: 7rem;
 @keyframes move {
   25% {
     opacity: 1;
-
   }
   33% {
     opacity: 1;
@@ -335,82 +334,68 @@ height: 7rem;
 }
 
 @media only screen and (max-width: 600px) {
+  .subcontainer.about {
+    height: 100%;
+  }
 
- .subcontainer.about {
-  height: 100%;
-}
+  .pfp {
+    margin: 4rem 2rem 0rem 2rem;
+  }
 
-.pfp {
-  margin: 4rem 2rem 0rem 2rem;
-}
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+  }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 2rem;
-}
-
-.skillTitle {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-
-
+  .skillTitle {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .a {
     margin: 0rem 3% 0rem 3%;
-   }
-   
-   .a:hover {
-    margin: 0rem 3% 0rem 3%;
-   }
+  }
 
+  .a:hover {
+    margin: 0rem 3% 0rem 3%;
+  }
 }
 
 @media only screen and (max-height: 600px) {
-
   .subcontainer.about {
-   height: 100%;
- }
- 
- .pfp {
-   border-radius: 150px;
-   margin: 4rem 2rem 0rem 2rem;
- }
- 
- .skills {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   row-gap: 2rem;
- }
- 
- .skillTitle {
-   margin-left: 3%;
-   margin-right: 3%;
- }
- 
- .a {
-  margin: 0rem 3% 0rem 3%;
- }
- 
- .a:hover {
-  margin: 0rem 3% 0rem 3%;
- }
+    height: 100%;
+  }
 
- .navbar {
-  margin-left: inherit;
+  .pfp {
+    border-radius: 150px;
+    margin: 4rem 2rem 0rem 2rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+
+  .skillTitle {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .a {
+    margin: 0rem 3% 0rem 3%;
+  }
+
+  .a:hover {
+    margin: 0rem 3% 0rem 3%;
+  }
+
+  .navbar {
+    margin-left: inherit;
+  }
 }
- 
- }
-
-
-
-
-
-
-
